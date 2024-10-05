@@ -8,7 +8,7 @@ module "myapp-vpc" {
   public_subnets  = var.public_subnet_cidr_blocks
   azs             = data.aws_availability_zones.azs.names
 
-  enable_nat_gateway   = true
+  enable_nat_gateway   = null
   single_nat_gateway   = true
   enable_dns_hostnames = true
 
