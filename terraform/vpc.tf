@@ -9,8 +9,8 @@ module "myapp-vpc" {
   azs             = data.aws_availability_zones.azs.names
 
   enable_nat_gateway   = null
-  single_nat_gateway   = true
-  enable_dns_hostnames = true
+  single_nat_gateway   = null
+  enable_dns_hostnames = null
 
   tags = {
     "kubernetes.io/cluster/myapp-eks-cluster" = "shared"
